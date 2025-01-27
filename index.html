@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar Clone</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+                integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400..800&family=Cinzel:wght@400..900&display=swap"
+                    rel="stylesheet">
+                <!-- Slick CSS -->
+                <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+                <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+
+                        
+                
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <!-- Left Section -->
+            <div class="nav-left-main">
+                <img style="height: 36px;" src="./images/brandlogo.svg" alt="Brand Logo">
+                <div class="dropdown dropdwon-left-cus">
+                    <a class="for-dropdwon-hover-fix" href="#">ক্যাটাগরি সমূহ</a>
+                    <div class="dropdown-menu">
+                        <a href="#">ক্রিয়েটিভিটি এবং ডিজাইন</a>
+                        <a href="#">ফ্রিল্যান্স মার্কেটপ্লেস</a>
+                        <a href="#">টিচিং এবং একাডেমিক</a>
+                        <a href="#">টেকনোলজি</a>
+                        <a href="#">ডেভেলপমেন্ট</a>
+                        <a href="#">বিজনেস</a>
+                        <a href="#">সেলস এবং মার্কেটিং</a>
+                        <a href="#">প্রফেশনাল ডেভেলপমেন্ট</a>
+                        <a href="#">পার্সোনাল ডেভেলপমেন্ট</a>
+                        <a href="#">বিদেশী ভাষা</a>
+                        <a href="#">ফ্রি কোর্স</a>
+                        <a href="#">ওয়ার্কশপ এবং লাইভ ক্লাস</a>
+                    </div>
+<div class="dropdown">
+    <a class="for-dropdwon-hover-fix" href="#">অন্যান্য</a>
+    <div class="dropdown-menu">
+        <a href="#">ব্লগ সমূহ</a>
+        <a href="#">সকল কোর্সসমূহ</a>
+        <a href="#">বি.বি.সি জানালা</a>
+
+    </div>
+
+</div>
+                </div>
+                
+            </div>
+
+            <!-- Middle Section -->
+            <div class="search-box">
+                <input style="font-size: 14px;" type="text" placeholder="আপনি কি শিখতে চান?">
+                <button><span style="font-size: 16px;"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+            </div>
+
+            <!-- Right Section -->
+            <div class="nav-right">
+                <div class="dropdown">
+                    <a class="for-dropdwon-hover-fix" href="#">অন্যান্য</a>
+                    <div class="dropdown-menu">
+                        <a href="#">ENGLISH</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+
+                
+                <a href="#">লগ ইন</a>
+                <button class="btn">সাইন আপ</button>
+            </div>
+        </nav>
+        <!-- toggole nav for responsive start -->
+        <nav>
+            <div class="nav-res-cus">
+                <div class="nav-con-res-cus">
+                    <div class="lest-res-nav">
+                        <span class="mr-res" id="hamburger-menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                        <div>
+                            <img class="res-img" style="height: 36px;" src="./images/brandlogo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="right-res-nav">
+                        <a style="text-decoration: none;" href="#">লগ ইন</a>
+                        <div style="margin-top: 5px;" class="cart">
+                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hidden Sidebar Menu -->
+            <div class="side-menu" id="side-menu">
+                <div class="close-menu" id="close-menu">
+                    
+                    <span><i class="fa-solid fa-times"></i></span>
+                </div>
+                <div class="res-ham-nav-brnd-cus"><img style="height: 36px;" src="./images/brandlogo.svg" alt=""></div>
+                <ul>
+                    <li><a href="#">হোম</a></li>
+                    <li><a href="#">কোর্সসমূহ</a></li>
+                    <li><a href="#">সম্পর্কিত</a></li>
+                    <li><a href="#">যোগাযোগ</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+        <main class="main-cus">
+            <!-- first categori start -->
+            <div class="button-container">
+                <button>গ্রাফিক ডিজাইন</button>
+                <button>ল্যাঙ্গুয়েজ কোর্স</button>
+                <button>ওয়েব ডিজাইন</button>
+                <button>ফটোগ্রাফি</button>
+                <button>ডাটা এন্ট্রি</button>
+                <button>ইংলিশ লার্নিং</button>
+                <button>আইইএলটিএস</button>
+                <button>ডিজিটাল মার্কেটিং</button>
+            </div>
+            <!-- first categori end -->
+            <!-- responsive mode search box start -->
+             <div class="rr">
+                <div class="search-container-resuc">
+                    <input type="text" placeholder="আপনি কি শিখতে চান?">
+                    <button>
+                        <i class="fas fa-search"></i> <!-- Font Awesome সার্চ আইকন -->
+                    </button>
+                </div>
+             </div>
+            
+            <!-- apni ki jikhe can start -->
+            <div class="ki-sikhte-main">
+                <div class="ki-shikhte-cus">
+                    <div class="ki-shikhte-cus-inner">
+                        <div class="ki-shikhte-nn">
+                            <h1 class="sikh-cus">আপনি কি শিখতে চান?</h1>
+                            <p class="fr-hid">দেশের সেরা ইন্সট্রাক্টরদের সেরা সব কোর্স এখন এক প্ল্যাটফর্মে।</p>
+                            <div class="text-cus">
+                                <p >দেশের সেরা ইন্সট্রাক্টরদের সেরা সব কোর্স </p>
+                                <span>এখন এক প্ল্যাটফর্মে।</span>
+                            </div>
+                            <div class="buttons">
+                                <button>সাবস্ক্রিপশন</button>
+                                <button>রেফার এন্ড আর্ন</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- jonopriyo course start -->
+            <div class="jonopriyo-course-main">
+                <div class="jonopriyo-course-inner">
+                    <div class="header-cus">
+                        <h1>সবচেয়ে জনপ্রিয় কোর্স</h1>
+                        <button>সকল প্রোগ্রাম দেখুন</button>
+                    </div>
+<!-- jonopriyo carousel start -->
+
+                    <div class="carousel-one">
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/20221107110926-63689306168d1.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Self Development</span>
+                                </div>
+                                <div class="card-text-cus">
+                                    <p class="description">
+                                        স্মৃতি ধরে রাখার শখ মানুষের বেশ পুরানো। একটা সময় শুধুই শখের বসে মানুষের ... <a class="show-red-lik"
+                                            href="">show details</a>
+                                    </p>
+                                </div>
+                    
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/20221205094243-638d68b370262.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Light set up</span>
+                                </div>
+                                <div class="card-text-cus">
+                                    <p class="description">
+                                        স্মৃতি ধরে রাখার শখ মানুষের বেশ পুরানো। একটা সময় শুধুই শখের বসে মানুষের ... <a class="show-red-lik"
+                                            href="">show details</a>
+                                    </p>
+                                </div>
+                        
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/20221115134458-6373437a7b724.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Self Development</span>
+                                </div>
+                                <div class="card-text-cus">
+                                    <p class="description">
+                                        স্মৃতি ধরে রাখার শখ মানুষের বেশ পুরানো। একটা সময় শুধুই শখের বসে মানুষের ... <a class="show-red-lik"
+                                            href="">show details</a>
+                                    </p>
+                                </div>
+                        
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 4 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/20230316162258-6412ee02394e0.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Self Development</span>
+                                </div>
+                                <div class="card-text-cus">
+                                    <p class="description">
+                                        স্মৃতি ধরে রাখার শখ মানুষের বেশ পুরানো। একটা সময় শুধুই শখের বসে মানুষের ... <a class="show-red-lik"
+                                            href="">show details</a>
+                                    </p>
+                                </div>
+                        
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/20221107110956-636893244a3ec.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Self Development</span>
+                                </div>
+                                <div class="card-text-cus">
+                                    <p class="description">
+                                        স্মৃতি ধরে রাখার শখ মানুষের বেশ পুরানো। একটা সময় শুধুই শখের বসে মানুষের ... <a class="show-red-lik"
+                                            href="">show details</a>
+                                    </p>
+                                </div>
+                        
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+<!-- jonopriyo carousel end -->
+
+                </div>
+            </div>
+            <div class="jonopriyo-course-main">
+                <div class="jonopriyo-course-inner">
+                    <div class="header-cus">
+                        <h1>সবচেয়ে জনপ্রিয় বান্ডেল</h1>
+                        <button>সকল প্রোগ্রাম দেখুন</button>
+                    </div>
+<!-- jonopriyo carousel start -->
+
+                    <div class="carousel-two">
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/img1.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Self Development</span>
+                                </div>
+<div class="content-list">
+    <ul class="ul-cus">
+        <li>Video Editing</li>
+        <li>Motion Graphics</li>
+        <li>YouTube Content Creator Course</li>
+        <li>Radio/TV Presentation</li>
+        <li>3D Animation Basic</li>
+        <li>Video Editing Fundamentals</li>
+        <li>Basic Course of Game Development without Coding</li>
+    </ul>
+</div>
+
+                                
+                    
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/img2.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Light set up</span>
+                                </div>
+
+<div class="content-list">
+    <ul class="ul-cus">
+        <li>Video Editing</li>
+        <li>Motion Graphics</li>
+        <li>YouTube Content Creator Course</li>
+        <li>Radio/TV Presentation</li>
+        <li>3D Animation Basic</li>
+        <li>Video Editing Fundamentals</li>
+        <li>Basic Course of Game Development without Coding</li>
+    </ul>
+</div>
+
+                                
+                        
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/img3.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Self Development</span>
+                                </div>
+<div class="content-list">
+    <ul class="ul-cus">
+        <li>Video Editing</li>
+        <li>Motion Graphics</li>
+        <li>YouTube Content Creator Course</li>
+        <li>Radio/TV Presentation</li>
+        <li>3D Animation Basic</li>
+        <li>Video Editing Fundamentals</li>
+        <li>Basic Course of Game Development without Coding</li>
+    </ul>
+</div>
+
+                               
+                        
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Card 4 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/img4.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Self Development</span>
+                                </div>
+<div class="content-list">
+    <ul class="ul-cus">
+        <li>Video Editing</li>
+        <li>Motion Graphics</li>
+        <li>YouTube Content Creator Course</li>
+        <li>Radio/TV Presentation</li>
+        <li>3D Animation Basic</li>
+        <li>Video Editing Fundamentals</li>
+        <li>Basic Course of Game Development without Coding</li>
+    </ul>
+</div>
+
+                      
+                        
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="card">
+                            <div class="card-img"><img src="/images/img5.jpeg" alt="Card Image"></div>
+                            <div class="card-content">
+                                <div class="photgraphy-cus">
+                                    <h3>Photography</h3>
+                                </div>
+                                <div class="studn-and-satar">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                        <i class="fa-solid fa-star" style="color: #e46d2c;"></i>
+                                    </div>
+                                    <div>2,5486 students</div>
+                                </div>
+                                <div class="tags">
+                                    <span>Photography</span>
+                                    <span>Light set up</span>
+                                    <span>Camera angle</span>
+                                    <span>Self Development</span>
+                                </div>
+<div class="content-list">
+    <ul class="ul-cus">
+        <li>Video Editing</li>
+        <li>Motion Graphics</li>
+        <li>YouTube Content Creator Course</li>
+        <li>Radio/TV Presentation</li>
+        <li>3D Animation Basic</li>
+        <li>Video Editing Fundamentals</li>
+        <li>Basic Course of Game Development without Coding</li>
+    </ul>
+</div>
+
+              
+                        
+                                <div class="price-curd-cus">
+                                    <div class="pric-wrap-cus">
+                                        <p class="price">
+                                            <del class="dellt">Tk 800</del>
+                                            <span class="disct">-50%</span>
+                                            <span class="prces">Tk 400</span>
+                                        </p>
+                                        <p class="erntk">Earn Tk 80</p>
+                                    </div>
+                                </div>
+                                <div class="card-btns">
+                                    <a class="crdbtn-one" href="">Add To Cart</a>
+                                    <a class="crdbtn-two" href="">Share And Earn</a>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+<!-- jonopriyo carousel end -->
+
+                </div>
+            </div>
+        </main>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Slick JS -->
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+        <script src="script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel-one').slick({
+                infinite: false, // Loop বন্ধ করতে এই লাইনটি আপডেট করুন
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1268,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 909,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+        $(document).ready(function () {
+            $('.carousel-two').slick({
+                infinite: false, // Loop বন্ধ করতে এই লাইনটি আপডেট করুন
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 1268,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 909,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    </body>
+
+</html>

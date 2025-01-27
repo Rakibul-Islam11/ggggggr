@@ -1,0 +1,1040 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        
+        font-style: normal;
+        font-family: "Baloo Da 2", serif;
+            font-optical-sizing: auto;
+    font-weight: 500;
+            font-style: normal;
+            overflow-x: hidden;
+}
+
+
+.navbar {
+    
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 42px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .nav-left-main{
+    display: flex;
+        align-items: center;
+        gap: 130px;
+}
+.navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    position: relative;
+}
+
+.navbar a:hover {
+    color: #f58220;
+}
+
+.dropdown {
+    padding: 5px;
+    position: relative;
+}
+
+.dropdown>a::after {
+    content: '';
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    top: 42%;
+    right: -14px;
+    transform: translateY(-50%) rotate(135deg);
+    transition: all 0.3s linear;
+    display: inline-block;
+}
+
+.dropdown:hover>a::after {
+    transform: translateY(-50%) rotate(-45deg);
+}
+.dropdwon-left-cus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.dropdown .dropdown-menu {
+    width: 200px;
+    position: absolute;
+    top: 150%;
+    left: -10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown .dropdown-menu a {
+    padding: 4px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+        font-weight: 500;
+}
+
+.dropdown .dropdown-menu a:hover {
+    background-color: #f58220;
+    color: white;
+}
+
+.navbar .search-box {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+.search-box input::placeholder {
+    font-weight: 500;
+    /* ফন্ট ওজন বাড়ানো */
+    font-size: 16px;
+    /* নিশ্চিত করার জন্য ফন্ট সাইজ উল্লেখ করুন */
+    color: #999;
+    /* Placeholder রঙ (ঐচ্ছিক) */
+    font-style: normal;
+        font-family: "Baloo Da 2", serif;
+        font-optical-sizing: auto;
+        color: #606c80;
+        font-style: normal;
+}
+
+.navbar .search-box input {
+    border: none;
+    padding: 18px 8px;
+    outline: none;
+    width: 278px;
+}
+
+.navbar .search-box button {
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.navbar .cart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar .cart span {
+    color: #f58220;
+    font-weight: bold;
+}
+
+.navbar .btn {
+    padding: 8px 15px;
+    background-color: #e46d2c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navbar .btn:hover {
+    background-color: #e46d2c;
+}
+.for-dropdwon-hover-fix{
+    /* height: 40px; */
+    padding: 24px 3px;
+}
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.cart span::after {
+    content: '0';
+    /* পসুডো এলিমেন্টে 0 দেখানো হবে */
+    position: absolute;
+    top: -10px;
+    /* আইকনের উপরে পজিশন */
+    right: -10px;
+    /* ডান দিকে পজিশন */
+    background-color: #e46d2c;
+    /* ব্যাকগ্রাউন্ড কালার */
+    color: white;
+    /* টেক্সট কালার */
+    font-size: 12px;
+    /* ফন্ট সাইজ */
+    font-weight: bold;
+    /* ফন্ট স্টাইল */
+    width: 17px;
+    /* সার্কেলের প্রস্থ */
+    height: 17px;
+    /* সার্কেলের উচ্চতা */
+    border-radius: 50%;
+    /* এটি বৃত্তাকার করবে */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+    /* সামান্য শ্যাডো */
+}
+
+.cart span i {
+    color: #022429;
+    /* আইকনের রঙ গ্রে */
+    font-size: 18px;
+    /* প্রয়োজনে ফন্ট সাইজ অ্যাডজাস্ট করুন */
+}
+
+@media only screen and (max-width:1244px){
+     .nav-right {
+            
+            gap: 18px !important;
+        }
+                .dropdwon-left-cus {
+                    gap: 9px;
+                }
+                           .navbar .nav-left-main {
+                               display: flex;
+                               align-items: center;
+                               gap: 10px;
+                           }
+}
+@media only screen and (max-width:1071px){
+    .search-box {
+        width: 205px;
+    }
+}
+@media only screen and (max-width:942px){
+    .navbar {
+        display: none;
+    }
+}
+
+/* responsive nav start */
+.nav-res-cus {
+    width: 100vw;
+    height: 60px;
+    background-color: wheat;
+    display: flex;
+    /* Flexbox Active */
+    justify-content: space-around;
+    /* Horizontal Center */
+    align-items: center;
+    /* Vertical Center */
+    
+}
+
+.nav-con-res-cus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Left and Right Content Spaced */
+    align-items: center;
+    /* Center Vertically */
+    width: 100%;
+    /* Full Width */
+    padding: 0 20px;
+    /* Padding for Inner Content */
+    
+}
+
+.lest-res-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* Center Content Vertically */
+    gap: 10px;
+    /* Space Between Items */
+}
+
+.right-res-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Center Horizontally */
+    align-items: center;
+    /* Center Vertically */
+    gap: 10px;
+    /* Space Between Items */
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    /* Center Icon Vertically */
+    position: relative;
+    gap: 5px;
+}
+
+.cart span::after {
+    content: '0';
+    /* Default Cart Count */
+    position: absolute;
+    top: -10px;
+    /* Adjust Top Position */
+    right: -10px;
+    /* Adjust Right Position */
+    background-color: #e46d2c;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cart span i {
+    color: #022429;
+    font-size: 18px;
+}
+.right-res-nav a {
+    padding: 4px 15px;
+        background-color: #e46d2c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+}
+@media only screen and (max-width:450px) {
+    .res-img {
+        width: 160px;
+    }
+    .mr-res {
+        margin: 0 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Main Navbar */
+.nav-res-cus {
+    width: 100vw;
+    height: 60px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+}
+
+.nav-con-res-cus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.lest-res-nav,
+.right-res-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mr-res {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cart span i {
+    color: #022429;
+    font-size: 18px;
+}
+
+/* Sidebar Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* Initially hidden */
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 20px;
+    transition: left 0.3s ease;
+    /* Smooth slide-in */
+    z-index: 1000;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.side-menu ul li {
+    margin: 15px 0;
+}
+
+.side-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.side-menu ul li a:hover {
+    color: #f58220;
+}
+
+/* Close Menu Button */
+.close-menu {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Open Sidebar Menu */
+.side-menu.open {
+    left: 0;
+    /* Menu becomes visible */
+}
+.res-ham-nav-brnd-cus {
+    background-color: #f8f9fa;
+    /* হালকা ধূসর রঙ */
+    padding: 10px;
+    /* কিছু প্যাডিং */
+    border-radius: 12px;
+    /* বর্ডার রেডিয়াস */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* সুন্দর শ্যাডো */
+    display: inline-block;
+    /* কন্টেন্ট অনুযায়ী সাইজ */
+    text-align: center;
+    /* লোগো মাঝখানে রাখা */
+}
+@media only screen and (min-width:942px) {
+    .nav-res-cus {
+        display: none;
+    }
+}
+/* phone nav res end  */
+
+/* first categoru start */
+
+.button-container button {
+padding: 6px 10px;
+margin-top: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    
+    transition: background-color 0.3s, transform 0.3s;
+
+
+
+
+
+
+
+        font-weight: 600;
+
+
+        transition: all 0.3s linear;
+    font-family: Arial, sans-serif;
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+    
+        font-style: normal;
+        font-family: "Baloo Da 2", serif;
+        font-optical-sizing: auto;
+
+        font-style: normal;
+
+    
+}
+.button-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0px 42px;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* wrap করার জন্য */
+}
+@media only screen and (max-width:910px){
+    .button-container {
+        display: none;
+    }
+}
+/* main responsive sreachbox start */
+.search-container-resuc {
+    width: 90%;
+    /*সার্চবক্সপ্রাথমিকভাবেস্ক্রিনের90%প্রস্থনেবে*/max-width: 600px;
+    /*সর্বোচ্চপ্রস্থ*/display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.rr {
+    
+display: flex;
+    justify-content: center;
+    align-items: center;
+ padding: 0px 10px;
+}
+
+.search-container-resuc input {
+    flex: 1;
+    /* সার্চ বক্সের জন্য পুরো প্রস্থ নেবে */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.search-container-resuc input::placeholder {
+    color: #aaa;
+}
+
+.search-container-resuc button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container-resuc button:hover {
+    color: #f97316;
+    /* hover অবস্থায় কমলা রঙ */
+}
+
+@media (max-width: 768px) {
+    .search-container-resuc{
+        width: 100%;
+        /* ছোট স্ক্রিনে 100% প্রস্থ */
+    }
+}
+@media only screen and (min-width: 910px){
+    .search-container-resuc {
+        display: none;
+    }
+}
+/* ki shikte can start */
+.ki-sikhte-main {
+    padding: 0px 40px;
+}
+.ki-shikhte-cus {
+    width: 100%;
+
+    
+
+}
+.ki-shikhte-cus-inner{
+    width: 100%;
+    min-height: 250px;
+        background-image: url('./images/bannerimg.webp');
+        background-size: 400px;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-color: #fff;
+            padding: 90px 20px;
+            
+}
+
+ .ki-shikhte-cus-inner button {
+     padding: 20px 35px;
+     font-size: 14px;
+     font-weight: bold;
+     color: #fff;
+     background-color: #e46d2c;
+     /* কমলা রঙ */
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: background-color 0.3s, transform 0.2s;
+
+     
+     
+ }
+
+ .ki-shikhte-cus-inner button:hover {
+     background-color: #ea580c;
+     /* hover অবস্থায় ডার্ক কমলা */
+     transform: scale(1.05);
+ }
+ .ki-shikhte-nn h1 {
+    font-weight: 700;
+        font-size: 64px;
+        margin-bottom: 0;
+ }
+  .ki-shikhte-nn p {
+    font-weight: 600;
+    margin: 0;
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: normal;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+.text-cus p, span {
+    margin: 0;
+    font-weight: 600;
+
+
+        font-size: 18px;
+        line-height: normal;
+}
+@media only screen and (max-width:768px){
+    .buttons{
+        flex-direction: column;
+    }
+        .ki-shikhte-cus-inner{
+            padding: 0;
+        }
+        .text-cus {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            margin-bottom: 15px;
+        }
+                .fr-hid {
+                    display: none;
+                }
+                                .ki-sikhte-main {
+                                    padding: 0px 10px;
+                                }
+}
+@media only screen and (min-width:768px){
+    .fr-hid {
+            display: block;
+        }
+                 .text-cus {
+                    display: none;
+                 }
+       
+}
+@media only screen and (max-width : 606px){
+    .sikh-cus {
+        line-height: 70px;
+    }
+         .ki-shikhte-nn h1 {
+             
+             font-size: 50px;
+             
+         }
+                 .ki-shikhte-cus-inner button {
+                    padding: 16px 35px;
+                 }
+}
+
+/* jonopriyo course start */
+.jonopriyo-course-main {
+    width: 100%;
+    margin: auto;
+    background-color: #fafafa;
+}
+.header-cus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    margin: auto;
+    padding-top: 48px;
+}
+.header-cus button {
+    border: 2px solid black;
+    border-radius: 15px;
+    color: #202020;
+    font-style: normal;
+        font-family: "Baloo Da 2", serif;
+        font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 15px 40px;
+    background-color: white;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.header-cus h1 {
+    font-size: 40px;
+    color: #202020;
+}
+/* first carousel start */
+.carousel-one {
+    width: 94%;
+    margin: auto;
+    padding: 10px 0px;
+    position: relative;
+    
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+   
+    overflow: hidden;
+    text-align: center;
+    margin: 0 10px;
+
+    padding: 15px 17px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+
+.card-content .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 5px;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.card-content .tags span {
+    background: #fefac3;
+    color: #202020;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+
+.card-content .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+
+.card-content .price del {
+    color: #888;
+}
+
+
+
+
+
+
+.photgraphy-cus {
+    display: flex;
+    justify-content: start;
+}
+
+.card-img img {
+    width: 100%;
+    height: 285pxpx;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.studn-and-satar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating {
+    color: #ff9800;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card-text-cus {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+}
+
+.show-red-lik {
+    text-decoration: none;
+    color: #e46d33;
+
+    font-size: 18px;
+}
+
+.hr-line-cus hr {
+    height: 0.5px;
+}
+
+.price-curd-cus {
+    border-top: 0.5px solid grey;
+}
+
+.dellt {
+    color: #808080;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.disct {
+    color: #E46D2C;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.prces {
+
+    display: inline-block;
+    font-size: 18px;
+    color: #202020;
+    font-weight: 600;
+}
+
+.erntk {
+
+    color: green !important;
+    font-size: 12px !important;
+}
+
+.pric-wrap-cus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Center the buttons */
+    gap: 16px;
+    /* Space between buttons */
+    margin-top: 15px;
+    /* Add some margin above */
+}
+
+.crdbtn-one {
+    background-color: #e46d2c;
+    padding: 12px 40px;
+    text-decoration: none;
+    /* Adjusted padding */
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+.crdbtn-one:hover {
+    background-color: #d55c1a;
+    /* Slightly darker on hover */
+}
+
+.crdbtn-two {
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #202020;
+    font-family: "Baloo Da 2", serif;
+    font-size: 16px;
+    /* Slightly smaller font */
+    padding: 12px 30px;
+    /* Adjusted padding */
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.crdbtn-two:hover {
+    background-color: black;
+    color: white;
+}
+/* Custom Arrow Buttons Next to Dots */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    bottom: -45px;
+    /* Position aligned with dots */
+    width: 40px;
+    height: 40px;
+    background-color: #e46d2c;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #d55c1a;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 18px;
+    color: #fff;
+}
+
+.slick-prev {
+    left: 592px;
+    top: 785px;
+}
+
+.slick-next {
+    right: 604px;
+        top: 785px;
+    /* Position to the right of the dots */
+}
+@media only screen and (max-width: 1024px){
+    .card-btns {
+        flex-direction: column;
+    }
+        
+}
+
+@media only screen and (max-width: 768px){
+    .carousel-one{
+        width: 100%;
+    }
+    .card {
+        padding: 10px 5px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .header-cus {
+        flex-direction: column;
+        gap: 0px;
+    }
+        .header-cus h1 {
+            margin-bottom: 0;
+            font-size: 28px;
+        }
+        .header-cus button{
+            padding: 15px 80px;
+        }
+}
+@media only screen and (min-width: 1131px) and (max-width:1368){
+    .slick-prev {
+            left: 0;
+            bottom: 0;
+        }
+    
+        .slick-next {
+            right: 0;
+            bottom: 0;
+            /* Position to the right of the dots */
+        }
+}
+@media only screen and (max-width: 1131px){
+    .slick-prev {
+            display: none;
+        }
+    
+        .slick-next {
+            display: none;
+        }
+}
+
+/* second carousel start */
+.content-list {
+    background: #fff;
+    max-width: 600px;
+
+
+    border-radius: 8px;
+
+}
+
+.content-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.content-list li {
+    margin-bottom: 10px;
+    color: #333;
+}
+.ul-cus li {
+    text-align: start;
+}
+.ul-cus {
+    margin-top: 0;
+}
