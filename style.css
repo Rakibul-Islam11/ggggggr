@@ -1,5 +1,8 @@
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
     font-family: Arial, sans-serif;
     font-family: "Cinzel", serif;
         font-optical-sizing: auto;
@@ -1362,7 +1365,7 @@ font-size: 40px;
     background-color: #fafafa;
 }
                 .testimonial-section {
-                    width: 92%;
+                    width: 95%;
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
@@ -1624,4 +1627,13 @@ footer {
             margin: auto;
         }
     
+}
+
+.rat-and-st {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gtt {
+    margin-bottom: 15px;
 }
