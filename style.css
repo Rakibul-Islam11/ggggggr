@@ -1296,3 +1296,168 @@ display: flex;
         display: none;
     }
 }
+
+/* bujte par */
+.bujhte-main {
+    width: 100%;
+    background-color: #f9dbd7;
+    padding-top: 35px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.bujte-inner {
+    width: 92%;
+    margin: auto;
+}
+.bujte-inner a {
+    
+    background-color: #e46027;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        
+}
+.bujte-inner h1 {
+font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 550px){
+    .bujhte-main {
+        padding-top: 5px;
+        height: fit-content;
+    }
+}
+
+.colon-main {
+    width: 100%;
+    margin-top: 150px;
+    height: 150px;
+    background-color: #fafafa;
+}
+.colon-inner {
+    line-height: 35px;
+    width: 92%;
+    margin: auto;
+}
+@media only screen and (max-width: 510px) {
+    .colon-main{
+        height: fit-content;
+    }
+}
+
+/* lerner speach start */
+.learner-main {
+    width: 100%;
+    margin-top: 164px;
+
+    background-color: #fafafa;
+}
+                .testimonial-section {
+                    width: 92%;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    padding: 40px 0;
+                    margin: auto;
+                }
+        
+                .testimonial-card {
+                    width: 100%;
+                    max-width: 578px;
+                    background: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    position: relative;
+                }
+        
+                .testimonial-card img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+        
+                .testimonial-header {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+        
+                .testimonial-header h3 {
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+        
+                .testimonial-header p {
+                    font-size: 0.9rem;
+                    color: gray;
+                }
+        
+                .testimonial-text {
+                    font-size: 1rem;
+                    color: #333;
+                }
+        
+                .quote {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #fff8c5;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    font-size: 30px;
+                    /* Font size adjust */
+                    font-weight: bold;
+                    color: #333;
+                }
+        
+                .quote::before {
+                    content: "\201C";
+                    font-size: 30px;
+                    /* Smaller font size */
+                    color: #333;
+                    line-height: 1;
+                }
+        
+                .dvname {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px;
+                }
+                                .dvname h3, p {
+                                    margin: 0;
+                                    
+                                }
+.dvname p {
+font-weight: 600;
+    color: rgba(32, 32, 32, 0.5);
+}
+
+                @media (max-width: 768px) {
+                    .testimonial-card {
+                        width: 90%;
+                    }
+                }
+
+@media only screen and (max-width: 550px){
+    .learner-main {
+        margin-top: 0;
+    }
+}
