@@ -1290,3 +1290,9 @@ display: flex;
         margin-top: 50px;
         
 }
+
+@media only screen and (max-width: 768px){
+    .arrow-for-two, .arrow-for-one{
+        display: none;
+    }
+}
