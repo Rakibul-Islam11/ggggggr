@@ -1850,7 +1850,7 @@
         <script src="script.js"></script>
 
     <script>
-    $(document).ready(function () {
+   $(document).ready(function () {
         $('.carousel-one').slick({
             infinite: false, // Loop বন্ধ করতে এই লাইনটি আপডেট করুন
             slidesToShow: 3,
@@ -1858,39 +1858,22 @@
             dots: false,
             autoplay: false,
             autoplaySpeed: 2000,
-            arrows: true, // সব ডিভাইসে অ্যারো থাকবে
+            arrows: true,
             prevArrow: $('.prev-one'), // Custom prev button
-            nextArrow: $('.next-one'),  // Custom next button
+            nextArrow: $('.next-one'),
             responsive: [
                 {
-                    breakpoint: 9999, // Infinite width (যত বড় স্ক্রিনই হোক)
+                    breakpoint: 1268,
                     settings: {
-                        slidesToShow: 3, // 100vw width-এ ৩টি কার্ড দেখাবে
+                        slidesToShow: 2,
                     }
                 },
                 {
-                    breakpoint: 1268, // 768px+ থেকে
-                    settings: {
-                        slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 768, // 0px - 768px পর্যন্ত
+                    breakpoint: 909,
                     settings: {
                         slidesToShow: 1,
-                        dots: true,
                     }
-                },
-                {
-                    breakpoint: 0, // 0px - 768px পর্যন্ত
-                    settings: {
-                        slidesToShow: 1,
-                        dots: true,
-                    }
-                },
-                
-                
-                
+                }
             ]
         });
     });
