@@ -1461,3 +1461,167 @@ font-weight: 600;
         margin-top: 0;
     }
 }
+
+/* wanna teacher */
+.want-tea-main {
+    width: 100%;
+}
+.want-main-inner {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 67px 58px;
+}
+.teat-left img {
+    max-width: 580px;
+}
+.teat-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0;
+}
+.teat-right div h1 {
+    font-size: 48px;
+        line-height: 56px;
+        color: #202020;
+        font-weight: 800;
+        margin-bottom: 0;
+}
+.betext {
+    font-size: 20px;
+        line-height: 32px;
+}
+.teat-right button {
+    background-color: #e46027;
+    width: 208px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media only screen and (max-width: 1026px) {
+    .want-main-inner {
+        flex-direction: column;
+    }
+}
+
+/* logo carousel */
+.log-carosel div img {
+    width: 150px;
+height: auto;
+    object-fit: contain;
+}
+
+
+.log-carosel {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    gap: 10px;
+    /* ইমেজের মাঝে গ্যাপ */
+    padding: 10px;
+  
+    justify-content: space-between;
+    align-items: center;
+}
+.probl img {
+    width: 100px;
+}
+/* footer */
+footer {
+    width: 100%;
+    background-color: #202020;
+    padding-bottom: 10px;
+    
+}
+.ftr-inner {
+    width: 92%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin: auto;
+    justify-content: start;
+}
+.fisrt-ftr {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.fisrt-ftr a{
+    text-decoration: none;
+    color: white;
+}
+.fisrt-middle {
+    display: flex;
+        flex-direction: column;
+        color: white;
+}
+.fisrt-middle a {
+    text-decoration: none;
+    color: white;
+}
+.fisrt-right {
+    display: flex;
+        flex-direction: column;
+        color: white;
+}
+.fisrt-right a {
+    text-decoration: none;
+    color: white;
+}
+.hrrr {
+    color: white;
+
+}
+.cpy a {
+    text-decoration: none;
+    color: rgb(228, 210, 210);
+    
+
+}
+.most-ftr {
+    width: 89%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contslink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    gap: 25px;
+}
+.contslink a {
+    color: white;
+    font-size: 25px;
+}
+@media only screen and (max-width: 816px){
+    .ftr-inner{
+        gap: 100px;
+    }
+}
+@media only screen and (max-width: 816px) {
+    .ftr-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+        .most-ftr{
+            margin: auto;
+        }
+    
+}

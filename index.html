@@ -1941,8 +1941,76 @@
 
                 </div>
             <!--!-->
-        
+        <!-- want to teacher -->
+                <div class="want-tea-main">
+                    <div class="want-main-inner">
+                        <div class="teat-left"><img src="images/teanchers.webp" alt=""></div>
+                        <div class="teat-right">
+                            <div>
+                                <h1>টিচার হতে চান?</h1>
+                            </div>
+                            <div class="betext">
+                                <p>Become an instructor and change lives — including your own.</p>
+                            </div>
+                            <button>Get Started</button>
+                        </div>
+                    </div>
+                </div>
+    <!-- brand logs slider -->
+     <div class="brandlo-sli-main">
+        <div class="brandlogo-inner">
+            <div class="log-carosel">
+                
+                    <div class="card probl"><img src="images/dhka.svg " alt=""></div>
+                    <div class="card"><img src="images/bus.svg" alt=""></div>
+                    <div class="card"><img src="images/dhka.svg" alt=""></div>
+                    <div class="card"><img src="images/trrr.svg" alt=""></div>
+                    <div class="card"><img src="images/bus.svg" alt=""></div>
+                    <div class="card"><img src="images/dhka.svg" alt=""></div>
+                    <div class="card"><img src="images/bbc.svg" alt=""></div>
+                    <div class="card"><img src="images/bbc.svg" alt=""></div>
+            </div>
+        </div>
+     </div>
+     <!-- footer -->
+      <footer>
+        <div class="ftr-inner">
+            <div class="fisrt-ftr">
+                <h3>কোম্পানি</h1>
+                <a href="">সাহায্য এবং সহযোগিতা</a>
+                <a href="">শর্তাবলী</a>
+                <a href="">প্রাইভেসি পলিসি</a>
+            </div>
+            <div class="fisrt-middle">
+                <h3>অন্যান্য</h1>
+                <a href="">ঘুড়ি লার্নিং সম্পর্কে জানুন</a>
+                <a href="">যোগাযোগ করুন</a>
+                <a href="">ব্লগ</a>
+            </div>
+            <div class="fisrt-right">
+                <h3>ডটলাইনস বাংলাদেশ লিমিটেড</h1>
+                <a href="">উদয় টাওয়ার (লেভেল ১২), ৫৭, ৫৭এ, <br>
+                গুলশান এভিনিউ, ঢাকা ১২১২</a>
+                <a href="">০৯-৬৪২৬০১৭৭১</a>
+            </div>
             
+        </div>
+        <div class="hrrr">
+            <hr>
+        </div>
+       
+        <div class="most-ftr">
+            <div class="cpy"><a href="">Copyright 2025. All rights reserved by Dotlines</a></div>
+            <div>
+                <div class="contslink">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+      </footer>
         </main>
 
 <!-- jQuery -->
@@ -1979,7 +2047,29 @@
                 }
             ]
         });
-
+        $('.log-carosel').slick({
+           infinite: false,
+           slidesToShow: 4,
+           autoplay: false,
+           arrows: false,
+           // prevArrow: $('#prev-one'),
+           // nextArrow: $('#next-one'),
+           responsive: [
+               {
+                   breakpoint: 1268,
+                   settings: {
+                       slidesToShow: 2,
+                   }
+               },
+               {
+                   breakpoint: 909,
+                   settings: {
+                       slidesToShow: 1,
+                       dots: true
+                   }
+               }
+           ]
+       });
         // Carousel Two
         $('.carousel-two').slick({
             infinite: false,
@@ -2027,6 +2117,8 @@
                     breakpoint: 909,
                     settings: {
                         slidesToShow: 1,
+                         arrows: false,
+                         dots: true,
                         
                     }
                 }
