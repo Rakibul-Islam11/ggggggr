@@ -725,9 +725,10 @@ display: flex;
     font-size: 40px;
     color: #202020;
 }
+/*! */
 /* first carousel start */
 .carousel-one {
-    width: 94%;
+    width: 95%;
     margin: auto;
     padding: 10px 0px;
     position: relative;
@@ -737,7 +738,7 @@ display: flex;
 .card {
     background: #fff;
     border-radius: 10px;
-   
+    
     overflow: hidden;
     text-align: center;
     margin: 0 10px;
@@ -781,8 +782,8 @@ display: flex;
 }
 
 .card-content .description {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 15px;
+    color: black;
     margin-bottom: 10px;
 }
 
@@ -928,41 +929,10 @@ display: flex;
     color: white;
 }
 /* Custom Arrow Buttons Next to Dots */
-.slick-prev,
-.slick-next {
-    position: absolute;
-    bottom: -45px;
-    /* Position aligned with dots */
-    width: 40px;
-    height: 40px;
-    background-color: #e46d2c;
-    color: #fff;
-    border-radius: 50%;
-    z-index: 1000;
-}
+
+/*! */
 
 
-.slick-prev:hover,
-.slick-next:hover {
-    background-color: #d55c1a;
-}
-
-.slick-prev::before,
-.slick-next::before {
-    font-size: 18px;
-    color: #fff;
-}
-
-.slick-prev {
-    left: 592px;
-    top: 785px;
-}
-
-.slick-next {
-    right: 604px;
-        top: 785px;
-    /* Position to the right of the dots */
-}
 @media only screen and (max-width: 1024px){
     .card-btns {
         flex-direction: column;
@@ -991,29 +961,13 @@ display: flex;
             padding: 15px 80px;
         }
 }
-@media only screen and (min-width: 1131px) and (max-width:1368){
-    .slick-prev {
-            left: 0;
-            bottom: 0;
-        }
-    
-        .slick-next {
-            right: 0;
-            bottom: 0;
-            /* Position to the right of the dots */
-        }
-}
-@media only screen and (max-width: 1131px){
-    .slick-prev {
-            display: none;
-        }
-    
-        .slick-next {
-            display: none;
-        }
-}
+
 
 /* second carousel start */
+.carousel-two {
+    width: 95%;
+    margin: auto;
+}
 .content-list {
     background: #fff;
     max-width: 600px;
@@ -1037,4 +991,301 @@ display: flex;
 }
 .ul-cus {
     margin-top: 0;
+}
+
+.prev-two, .next-two,.prev-one,
+.next-one {
+    width: 40px;
+        height: 40px;
+        background-color: #e46d2c;
+        color: #fff;
+        border-radius: 50%;
+        border: none;
+}
+.arrow-for-two, .arrow-for-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+/* pochondo s1tart */
+
+.pochondo-cate-main {
+    width: 94%;
+    margin: auto;
+}
+
+.pochondo-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ .for-pocon-button button {
+    border: 2px solid black;
+        border-radius: 15px;
+        color: #202020;
+        font-style: normal;
+        font-family: "Baloo Da 2",
+            serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 15px 40px;
+        background-color: white;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+ }
+ .poco-inner-dead-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+ }
+ .hddtextone {
+    font-size: 36px;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0;
+        padding-top: 28px;
+        
+ }
+ .hdtexcttwo {
+    font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 40px;
+ }
+ /* pochndo cate card start */
+ .container-cate {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 25px;
+
+     margin: auto;
+ }
+
+ .card-cate {
+     background: #fefac3;
+     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     text-align: center;
+
+ }
+
+
+
+ .card-cate img {
+     width: 250px;
+     height: 200px;
+     object-fit: contain;
+     border-bottom: 1px solid grey;
+ }
+
+ .card-cate h3 {
+     font-size: 1.2rem;
+     font-weight: bold;
+     margin-bottom: 5px;
+
+ }
+
+ .card-cate p {
+     font-size: 1rem;
+     color: #555;
+     margin-top: 0;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+     .container-cate {
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     }
+ }
+
+ @media only screen and (max-width: 452px){
+    .card-cate{
+        flex-direction: row;
+        gap: 0;
+    }
+        .card-cate img {
+            border-bottom: none;
+            width: 150px;
+        }
+        .card-cate div {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            text-align: start;
+            gap: 2px;
+        }
+                .card-cate div h3 {
+                    margin-bottom: 0;
+                }
+ } 
+ @media only screen and (max-width: 876px){
+    .pochondo-head {
+        flex-direction: column;
+    }
+    .for-pocon-button {
+        margin-bottom: 10px;
+    }
+        .frress {
+            padding: 15px 80px !important;
+            margin-bottom: 8px;
+        }
+        .hddtextone {
+            line-height: 50px;
+        }
+        .card-cate {
+            height: 150px;
+        }
+ }
+
+/* lokkho couse start */
+.lokkho-mainnn {
+    background-color: #fafafa;
+}
+.lokkho-course-main {
+    width: 94%;
+    margin: 55px auto;
+    background-color: #fafafa;
+    padding-bottom: 150px;
+}
+.minisld-img-with-ext img{
+    max-width: 100%;
+}
+.frst-head-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    line-height: 10px;
+}
+.lokkho-course-inner {
+    padding-top: 80px;
+}
+.mini-cate {
+    width: 855px;
+    margin: auto;
+    gap: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.mini-cate div p {
+    text-align: center;
+        font-style: normal;
+            font-family: "Baloo Da 2", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 17px;
+           
+}
+.mini-cate div img {
+    width: 50px;
+
+}
+.mini-cate div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frbdr {
+    border-bottom: 1px solid #e46d2c;
+    color: #e46d2c;
+}
+/* mini slid start */
+.carousel-three {
+    max-width: 855px;
+    margin: auto;
+}
+.carousel-three div img {
+    width: 100%;
+}
+.slick-prev {
+    background-color:#e46d2c;
+    columns: green;
+    left: 5px;
+    z-index: 99;
+    width: 50px;
+    top: 300px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.slick-next {
+    background-color:#e46d2c;
+        columns: green;
+        right: 5px;
+            z-index: 99;
+            width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                top: 300px;
+}
+.tags span {
+    background: #fefac3;
+    color: #202020;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+.mini-slid-txte {
+    border-bottom: 1px solid gray;
+}
+
+.pric-wrap-cus-for-minislid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mini-slide-price-and-btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-curd-cus-fr-minisl {
+    border: none;
+}
+.mini-slid-inner {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1030px){
+    .mini-slide-price-and-btn-wrap {
+        flex-direction: column;
+    }
+}
+/* new couse start */
+.jonopriyo-course-main-for-new-course {
+    width: 100%;
+        margin: auto;
+        background-color: #c9dae0;
+        margin-top: -80px;
+        padding-bottom: 50px;
+}
+/* kom somoye course  */
+.jonopriyo-course-main-komsomoye {
+    width: 100%;
+        margin: auto;
+        background-color: white;
+        margin-top: 50px;
+        
 }
