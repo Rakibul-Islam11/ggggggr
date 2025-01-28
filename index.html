@@ -1852,12 +1852,12 @@
     <script>
     $(document).ready(function () {
         $('.carousel-one').slick({
-            infinite: false, // Loop বন্ধ
-            slidesToShow: 3, // ডিফল্টভাবে ৩টি কার্ড দেখাবে
+            infinite: false, // Loop বন্ধ করতে এই লাইনটি আপডেট করুন
+            slidesToShow: 3,
             slidesToScroll: 1,
+            dots: false,
             autoplay: false,
             autoplaySpeed: 2000,
-
             arrows: true, // সব ডিভাইসে অ্যারো থাকবে
             prevArrow: $('.prev-one'), // Custom prev button
             nextArrow: $('.next-one'),  // Custom next button
