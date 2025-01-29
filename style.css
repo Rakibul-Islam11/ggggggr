@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
    
     font-family: Arial, sans-serif;
     font-family: "Cinzel", serif;
@@ -14,339 +14,514 @@ body {
             font-style: normal;
             overflow-x: hidden;
 }
-
+/*!sssssssssssssssssssssssssssssssss */
 
 .navbar {
-    
-    height: 40px;
+    height: 29px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 42px;
+    padding: 15px 43px;
     background-color: #fafafa;
-    border-bottom: 1px solid #ddd;
+    position: relative;
+
 }
 
-.navbar .nav-left-main{
+.nav-brand img {
+    width: 220px;
+}
+
+.nav-links {
     display: flex;
-        align-items: center;
-        gap: 130px;
-}
-.navbar .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 28px;
+    list-style: none;
+    gap: 20px;
 }
 
 
 
-.navbar a {
+.nav-links a {
     text-decoration: none;
-    color: #333;
-    font-size: 15px;
-    position: relative;
+    color: white;
+
+    display: block;
+    color: black;
 }
 
-.navbar a:hover {
-    color: #f58220;
+.forpopen-cate-drop li a:hover {
+    color: #e46d2c !important;
+    transition: 0.4s ease-in-out;
 }
 
-.dropdown {
-    padding: 5px;
-    position: relative;
+.for-open-onnano-drop li a:hover {
+    color: #e46d2c !important;
+    transition: 0.4s ease-in-out;
 }
 
-.dropdown>a::after {
-    content: '';
-    border-style: solid;
-    border-width: 1px 1px 0 0;
-    height: 6px;
-    width: 6px;
+.forpopen-cate-drop {
+    display: none;
     position: absolute;
-    top: 42%;
-    right: -14px;
-    transform: translateY(-50%) rotate(135deg);
-    transition: all 0.3s linear;
-    display: inline-block;
+    top: 92%;
+    left: 25%;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    line-height: 13px;
 }
 
-.dropdown:hover>a::after {
-    transform: translateY(-50%) rotate(-45deg);
+.for-open-onnano-drop {
+    display: none;
+    position: absolute;
+    top: 92%;
+    left: 35%;
+    background-color: white;
+    list-style: none;
+    padding: 11px 13px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    line-height: 34px;
+
 }
-.dropdwon-left-cus {
+
+.for-open-lan-drop {
+    display: none;
+    position: absolute;
+    top: 92%;
+    left: 76%;
+    background-color: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.forpopen-cate-drop li {
+    margin: 5px 0;
+}
+
+.forpopen-cate-drop a {
+    color: #333;
+    padding: 8px 15px;
+    display: block;
+}
+
+.first-dropdn {
+    margin-left: 63px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 30px;
     justify-content: center;
-}
-.dropdown .dropdown-menu {
-    width: 200px;
-    position: absolute;
-    top: 150%;
-    left: -10px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    display: none;
-    flex-direction: column;
-    min-width: 150px;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 10px;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: flex;
+
+
+.first-dropdn li:hover .forpopen-cate-drop {
+    display: block;
+
 }
 
-.dropdown .dropdown-menu a {
-    padding: 4px 20px;
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-        font-weight: 500;
+.scon-dropdwn:hover .for-open-onnano-drop {
+    display: block;
+
 }
 
-.dropdown .dropdown-menu a:hover {
-    background-color: #f58220;
-    color: white;
+.thisr-drop-dwn:hover .for-open-lan-drop {
+    display: block;
+
 }
 
-.navbar .search-box {
+.search-box {
     display: flex;
     align-items: center;
-    padding: 0px 10px;
+    width: 316px;
+    height: 40px;
+    background: white;
+    border-radius: 8px;
+    margin-left: 100px;
+    padding: 5px;
 
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: white;
-}
-.search-box input::placeholder {
-    font-weight: 500;
-    /* ফন্ট ওজন বাড়ানো */
-    font-size: 16px;
-    /* নিশ্চিত করার জন্য ফন্ট সাইজ উল্লেখ করুন */
-    color: #999;
-    /* Placeholder রঙ (ঐচ্ছিক) */
-    font-style: normal;
-        font-family: "Baloo Da 2", serif;
-        font-optical-sizing: auto;
-        color: #606c80;
-        font-style: normal;
 }
 
-.navbar .search-box input {
+.search-box input {
+    flex: 1;
     border: none;
-    padding: 18px 8px;
     outline: none;
-    width: 278px;
+    font-size: 16px;
+    padding: 10px;
+    background: transparent;
 }
 
-.navbar .search-box button {
-    background-color: transparent;
+.search-box button {
     border: none;
-    padding: 8px;
+    background: none;
     cursor: pointer;
+    padding: 10px;
 }
 
-.navbar .cart {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.search-box button i {
+    font-size: 20px;
+    color: #555;
 }
 
-.navbar .cart span {
-    color: #f58220;
-    font-weight: bold;
+.search-box input::placeholder {
+    font-size: 15px;
+    /* Placeholder টেক্সট ছোট করা */
+    padding-left: 5px;
+    /* Placeholder এর বাঁ পাশের গ্যাপ কমানো */
+    color: #888;
+    /* হালকা কালার দেয়া */
 }
 
-.navbar .btn {
-    padding: 8px 15px;
-    background-color: #e46d2c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.navbar .btn:hover {
-    background-color: #e46d2c;
-}
-.for-dropdwon-hover-fix{
-    /* height: 40px; */
-    padding: 24px 3px;
-}
-.cart {
+.fr-befor-icon {
     position: relative;
-    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
     align-items: center;
-    gap: 5px;
-    
 }
 
-.cart span::after {
-    content: '0';
-    /* পসুডো এলিমেন্টে 0 দেখানো হবে */
-    position: absolute;
-    top: -10px;
-    /* আইকনের উপরে পজিশন */
-    right: -10px;
-    /* ডান দিকে পজিশন */
-    background-color: #e46d2c;
-    /* ব্যাকগ্রাউন্ড কালার */
-    color: white;
-    /* টেক্সট কালার */
-    font-size: 12px;
-    /* ফন্ট সাইজ */
-    font-weight: bold;
-    /* ফন্ট স্টাইল */
-    width: 17px;
-    /* সার্কেলের প্রস্থ */
-    height: 17px;
-    /* সার্কেলের উচ্চতা */
-    border-radius: 50%;
-    /* এটি বৃত্তাকার করবে */
+.fr-befor-icon::after {
+    content: "\f107";
+    /* FontAwesome Down Arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    margin-left: 5px;
+    /* টেক্সটের সাথে কিছুটা দূরত্ব */
+    color: gray;
+    /* অ্যারোর রঙ */
+}
+
+.for-hover-color-first-drop:hover .fr-befor-icon {
+    color: #e46d2c;
+    transition: 0.4s ease-in-out;
+}
+
+.for-hover-color-scond-drop:hover .fr-hover-scnd {
+    color: #e46d2c;
+    transition: 0.4s ease-in-out;
+}
+
+.thisr-drop-dwn:hover .fr-hovt-trd-text {
+    color: #e46d2c;
+    transition: 0.4s ease-in-out;
+}
+
+
+.right-side-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ccn {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    
-    /* সামান্য শ্যাডো */
 }
 
-.cart span i {
-    color: #022429;
-    /* আইকনের রঙ গ্রে */
-    font-size: 18px;
-    /* প্রয়োজনে ফন্ট সাইজ অ্যাডজাস্ট করুন */
+.ccn::before {
+    content: '0';
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background-color: #e46d2c;
+    color: white;
+    border-radius: 15px;
+    font-size: 12px;
+    top: 10px;
+    right: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width:1244px){
-     .nav-right {
-            
-            gap: 18px !important;
-        }
-                .dropdwon-left-cus {
-                    gap: 9px;
-                }
-                           .navbar .nav-left-main {
-                               display: flex;
-                               align-items: center;
-                               gap: 10px;
-                           }
+.right-side-items a {
+    margin: 0;
+    padding: 0;
 }
-@media only screen and (max-width:1071px){
-    .search-box {
-        width: 205px;
+
+.for-pad {
+    padding: 24px 6px;
+}
+
+.nav-signup-btn {
+    background-color: #e46d2c;
+    border: none;
+    margin-top: 16px;
+    width: 96px;
+    height: 35px;
+    border-radius: 7px;
+    /* কোণ গোল করার জন্য */
+    color: white;
+    /* টেক্সটের রং */
+    font-size: 12.5px;
+    /* ফন্ট সাইজ */
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav-signup-btn:hover {
+    background-color: white;
+    border: 2px solid #e46d2c;
+    color: #e46d2c;
+    transition: 0.4s ease-in-out;
+}
+
+.logibtn-cus {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.first-dropdn a:first-child {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.scon-dropdwn a:first-child {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-links a:first-child {
+    color: #232324;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ccn:hover {
+    color: red;
+    transition: 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 1127px) {
+    .first-dropdn {
+        gap: 0px;
+    }
+
+    .for-hover-color-first-drop {
+        gap: 0px;
+    }
+
+    .fr-res {
+        gap: 2px;
+    }
+
+    .ccn::before {
+        content: '0';
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        background-color: #e46d2c;
+        color: white;
+        border-radius: 15px;
+        font-size: 12px;
+        top: 10px;
+        right: 185px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
-@media only screen and (max-width:942px){
+
+@media only screen and (max-width: 1127px) {
     .navbar {
+        display: none;
+    }
+
+    .for-responsvie-nav {
+        display: block;
+    }
+}
+
+/* responsive nv start */
+@media only screen and (min-width: 1127px) {
+    .navbar-main-desc {
+        display: flex;
+    }
+
+    .for-responsvie-nav {
         display: none;
     }
 }
 
-/* responsive nav start */
-.nav-res-cus {
-    width: 100vw;
-    height: 60px;
-    background-color: wheat;
-    display: flex;
-    /* Flexbox Active */
-    justify-content: space-around;
-    /* Horizontal Center */
-    align-items: center;
-    /* Vertical Center */
-    
+.for-responsvie-nav {
+    padding: 13px 28px;
 }
 
-.nav-con-res-cus {
+.for-responsvie-nav-inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* Left and Right Content Spaced */
     align-items: center;
-    /* Center Vertically */
-    width: 100%;
-    /* Full Width */
-    padding: 0 20px;
-    /* Padding for Inner Content */
-    
+
 }
 
-.lest-res-nav {
+.responsive-img-ham-wrap {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    /* Center Content Vertically */
     gap: 10px;
-    /* Space Between Items */
 }
 
-.right-res-nav {
+.wrapfor-responsive-cart-login-wrap {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* Center Horizontally */
     align-items: center;
-    /* Center Vertically */
     gap: 10px;
-    /* Space Between Items */
 }
 
-.cart {
-    display: flex;
-    align-items: center;
-    /* Center Icon Vertically */
-    position: relative;
-    gap: 5px;
-}
-
-.cart span::after {
-    content: '0';
-    /* Default Cart Count */
-    position: absolute;
-    top: -10px;
-    /* Adjust Top Position */
-    right: -10px;
-    /* Adjust Right Position */
+.wrapfor-responsive-cart-login-wrap button {
     background-color: #e46d2c;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 6px;
+}
+
+.responsivenav-img img {
+    width: 200px;
+}
+
+.responsive-nav-card div {
+    font-size: 22px;
+}
+
+.responsive-nav-card div::before {
+    content: '0';
     width: 17px;
     height: 17px;
-    border-radius: 50%;
+    position: absolute;
+    background-color: #e46d2c;
+    color: white;
+    border-radius: 15px;
+    font-size: 14px;
+    top: 2px;
+    right: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.cart span i {
-    color: #022429;
-    font-size: 18px;
+.hamburger-res {
+    font-size: 30px;
+    color: #e46d2c;
 }
-.right-res-nav a {
-    padding: 4px 15px;
+
+@media only screen and (max-width: 465px) {
+    .responsivenav-img img {
+        width: 150px !important;
+    }
+
+    .for-responsvie-nav {
+        padding: 13px 10px;
+    }
+
+    .responsive-nav-card div::before {
+        content: '0';
+        width: 17px;
+        height: 17px;
+        position: absolute;
         background-color: #e46d2c;
         color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+        border-radius: 15px;
         font-size: 14px;
-}
-@media only screen and (max-width:450px) {
-    .res-img {
-        width: 160px;
-    }
-    .mr-res {
-        margin: 0 !important;
+        top: 8px;
+        right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
+/* responsive side bar start */
+
+
+.hamburger-res {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.wrapfor-responsive-cart-login-wrap button {
+    background: #e46d2c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    /* বাম পাশ থেকে শুরু হবে */
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    /* ছায়া বাম পাশে */
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar.open {
+    left: 0;
+    /* ওপেন হলে বাম পাশে আসবে */
+}
+
+
+.sidebar .close-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn i {
+    font-size: 40px;
+    color: #e46d2c;
+}
+
+.sidebar-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.sidebar-buttons button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-btn {
+    background: #e46d2c;
+    color: white;
+}
+
+.signup-btn {
+    background: #e46d2c;
+    color: white;
+}
 
 
 
@@ -357,6 +532,117 @@ body {
 
 
 
+
+
+
+
+
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    padding: 10px;
+    border: none;
+    background-color: #e46d2c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.dropdown-menu-for-sidebarr-for-sidebarr {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.dropdown-pothom {
+    margin-bottom: 15px;
+}
+
+.dropdown-btn-for-side {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+
+}
+
+.dropdown-content-ditio {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.dropdown-content-prothom {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.dropdown-content-prothom li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content-prothom li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content-prothom,
+li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content-prothom li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-pothom:hover .dropdown-content-prothom {
+    display: block;
+}
+
+.silderbar-lan {
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    text-align: start;
+    margin-right: auto;
+}
+
+
+
+
+
+
+/*!eeeeeeeeeeeeeeeeeeeeeeeeeeee */
 /* Main Navbar */
 .nav-res-cus {
     width: 100vw;
@@ -698,6 +984,10 @@ display: flex;
     width: 100%;
     margin: auto;
     background-color: #fafafa;
+}
+.jonopriyo-course-inner-first {
+    width: 94%;
+    margin: auto;
 }
 .header-cus {
     display: flex;

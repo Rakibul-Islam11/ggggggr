@@ -1,0 +1,412 @@
+.slider-one-heading {
+    width: 100vw;
+    background-color: #fafafa;
+}
+.first-slide-head-text {
+    font-size: 19px;
+}
+.first-slide-head-text h1 {
+    margin-bottom: 0;
+}
+.first-slid-head-button button {
+    border: none;
+    background-color: #fafafa !important;
+    border: 2px solid black;
+    padding: 20px 38px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.slider-one-heading-inner {
+    width: 94vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.font-eng {
+    
+        font-family: "Roboto", serif;
+            font-optical-sizing: auto;
+           
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        
+}
+.rating{
+    margin-bottom: 0;
+}
+
+
+.slider-container-one {
+    width: 100vw;
+    background-color: #fafafa;
+}
+.slider-container-one-inner {
+    width: 95.5vw;
+    margin: auto;
+    
+    padding: 0px 2px;
+}
+.first-carousel .card img {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.photo-head {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 22px;
+}
+.std-count {
+    font-size: 19px;
+}
+.rating-and-count-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.tags-werap {
+    padding-bottom: 17px;
+}
+.all-tagss {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 5px;
+    flex-wrap: wrap;
+
+}
+.all-tagss div {
+    padding: 4px 12px;
+    background: #FEFAC3;
+    border-radius: 6px;
+    color: #202020;
+    display: inline-block;
+    font-size: 13px;
+}
+.card-text-cus-wrap {
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid rgb(209, 198, 198);
+}
+.description-text {
+    font-weight: 500;
+    text-align: start;
+}
+.show-red-linkk {
+    color: #e46d2c;
+    font-size: 17px;
+    padding-left: 3px;
+    text-decoration: none;
+}
+.pric-wrap-cus-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.price-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.dellt-tk {
+    color: rgb(119, 117, 117);
+    font-size: 13.5px;
+   
+}
+.disct-tk {
+    color: #e46d2c;
+    font-size: 16px;
+    
+}
+.prces-tk {
+    font-size: 20px;
+    color: #2e2d2d;
+   
+}
+.erntk-tk {
+    color: green !important;
+        font-size: 14px !important;
+        
+}
+.price-curd-cus-wrap{
+    padding-top: 10px;
+    
+}
+.card-button-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 28px;
+
+}
+.onn {
+    flex: 1;
+    color: white;
+    cursor: pointer;
+    background-color: #e46d2c;
+    border: none;
+}
+.tww {
+    flex: 1;
+    color: white;
+    cursor: pointer;
+    background-color: white !important;
+    color: black;
+    border: 1px solid black;
+    
+}
+.tww:hover {
+    background-color: black !important;
+    color: white;
+}
+.card-button-wrap button {
+    font-family: "Roboto", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    
+    
+    padding: 15px 2px;
+    font-size: 17px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+.custom-nav-one {
+    width: 100%;
+    margin: auto;
+    padding-top: 18px;
+    
+}
+.custom-nav-one-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navigation-button-wrap-one {
+    display: flex;
+    gap: 10px;
+}
+.navigation-button-wrap-one button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    border: none;
+    width: 30px;
+    background-color: #e46d2c !important;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media only screen and (max-width: 580px){
+    .slider-one-heading-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .first-slide-head-text {
+        
+        line-height: 40px;
+        font-size: 18px;
+    }
+    .first-slid-head-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+        .first-slid-head-button button {
+            padding: 20px 85px;
+        }
+}
+@media only screen and (max-width: 550px) {
+    .custom-nav-one {
+        display: none;
+    }
+}
+
+/* second slid */
+.secon-slide-head-main {
+    width: 100vw;
+    background-color: #fafafa;
+}
+.second-slide-inner {
+    width: 94vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding-top: 10px;
+        
+}
+.scnd-head-txt {
+    font-size: 19px;
+    
+}
+.scnd-head-txt h1{
+    margin-bottom: 7px;
+}
+.second-slide-inner button {
+        background-color: #fafafa !important;
+        border: 2px solid black;
+        padding: 20px 38px;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+.second-slide-main {
+    width: 100vw;
+    background-color: #fafafa;
+}
+.second-slide-inner-for-slid {
+    width: 95.5vw;
+        margin: auto
+}
+.scnd-sld-head-hot {
+    display: flex;
+    justify-content: start;
+}
+.sncd-slid-sdt-count {
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.all-tagss-two {
+    display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 5px;
+        flex-wrap: wrap;
+        padding-bottom: 12px;
+}
+.all-tagss-two div {
+    padding: 4px 12px;
+        background: #FEFAC3;
+        border-radius: 6px;
+        color: #202020;
+        display: inline-block;
+        font-size: 13px;
+}
+.ul-cus-scd li {
+    margin-bottom: 10px;
+    text-align: start;
+    font-size: 18px;
+    
+}
+.ul-cus-scd {
+    margin-top: 0;
+    padding-left: 20px;
+}
+.content-list-second-slid {
+    border-bottom: 0.5px solid rgb(209, 198, 198);
+}
+.pric-wrap-cus-inner-for-sld-teo {
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+}
+.price-wrap-for-two {
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+}
+.dellt-tk-fortwo {
+    color: rgb(119, 117, 117);
+        font-size: 13.5px;
+}
+.disct-tk-fortwo {
+    color: #e46d2c;
+        font-size: 16px;
+}
+.prces-tk-two {
+    font-size: 20px;
+        color: #2e2d2d;
+}
+.erntk-tk-two {
+    color: green !important;
+        font-size: 14px !important;
+}
+.price-curd-cus-wrap-forsli-teo {
+    padding-top: 8px;
+}
+.card-button-wrap-two {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding-top: 28px;
+}
+.card-button-wrap-two button {
+    font-family: "Roboto", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        padding: 15px 2px;
+        font-size: 17px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+}
+.onn-two {
+    flex: 1;
+        color: white;
+        cursor: pointer;
+        background-color: #e46d2c !important;
+        border: none;
+}
+.tww-two {
+    flex: 1;
+        color: white;
+        cursor: pointer;
+        background-color: white !important;
+        color: black;
+        border: 1px solid black;
+}
+.tww-two:hover {
+    border: 1px solid black;
+    background-color: black !important;
+    color: white;
+}
+.second-slid-img img {
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}

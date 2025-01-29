@@ -1,0 +1,51 @@
+.first-custom-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center ;
+}
+.first-custom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.first-custom-nav button {
+    background-color: #e46d2c;
+    /* Circle background color */
+    color: #fff;
+    /* Icon color */
+    border: none;
+    /* Remove border */
+    outline: none;
+    /* Remove outline */
+    width: 50px;
+    /* Circle width */
+    height: 50px;
+    /* Circle height */
+    border-radius: 50%;
+    /* Makes it a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+    transition: transform 0.2s, background-color 0.3s;
+    /* Add hover effect */
+}
+
+.first-custom-nav button:hover {
+    background-color: #e46d2c;
+    /* Darker blue on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge on hover */
+}
+
+.first-custom-nav button i {
+    font-size: 20px;
+    /* Icon size */
+    pointer-events: none;
+    /* Prevent icon click */
+}
