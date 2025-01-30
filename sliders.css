@@ -410,3 +410,92 @@
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
 }
+
+@media only screen and (max-width: 610px){
+    .second-slide-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .scnd-head-txt {
+        flex: 1;
+        line-height: 44px;
+    }
+       
+        .card-button-wrap-two {
+            display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        }
+}
+@media only screen and (max-width: 610px) {
+    /* .second-slide-inner button {
+        padding: 20px 52px;
+    } */
+}
+@media only screen and (max-width: 610px) {
+    .card-button-wrap-two {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 0px;
+        }
+        .onn-two {
+            width: 100%;
+        }
+        .tww-two {
+            width: 100%;
+        }
+                .second-slide-inner button {
+            width: 100%;
+            
+        }
+    .card-button-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .onn {
+        width: 100%;
+    }
+    .tww {
+        width: 100%;
+    }
+}
+.custom-nav-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+.second-custom-prev {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 21px;
+        border: none;
+        width: 30px;
+        background-color: #e46d2c !important;
+        height: 30px;
+        border-radius: 50%;
+        color: white;
+        font-size: 18px;
+        -webkit-border-radius: 50%;
+}
+.second-custom-next {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 21px;
+        border: none;
+        width: 30px;
+        background-color: #e46d2c !important;
+        height: 30px;
+        border-radius: 50%;
+        color: white;
+        font-size: 18px;
+        -webkit-border-radius: 50%;
+}
+@media only screen and (max-width: 550px) {
+    .custom-nav-two {
+        display: none;
+    }
+}
