@@ -333,10 +333,22 @@ body {
         align-items: center;
     }
 }
-.navbar-main-desc,.for-responsvie-nav {
+/* .navbar-main-desc,.for-responsvie-nav {
     position: fixed;
     z-index: 9999999999999999999;
-}
+} */
+ .navbar-main-desc {
+     position: sticky;
+     top: 0;
+     width: 94%;
+     background: white;
+     /* ব্যাকগ্রাউন্ড না দিলে কন্টেন্টের উপর মিশে যেতে পারে */
+     z-index: 1000;
+     /* অন্য এলিমেন্টের উপরে রাখার জন্য */
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     /* shadow দিলে সুন্দর দেখাবে */
+     margin: auto;
+ }
 @media only screen and (max-width: 1127px) {
     .navbar {
         display: none;
