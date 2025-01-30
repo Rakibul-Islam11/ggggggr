@@ -66,6 +66,11 @@
     justify-content: start;
     padding-bottom: 22px;
 }
+.photo-head p {
+    padding-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
 .std-count {
     font-size: 19px;
 }

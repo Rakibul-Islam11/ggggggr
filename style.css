@@ -1574,7 +1574,10 @@ display: flex;
 .mini-slid-inner {
     margin-top: 30px;
 }
-
+.learner-inner {
+    width: 100vw;
+    
+}
 @media only screen and (max-width: 1030px){
     .mini-slide-price-and-btn-wrap {
         flex-direction: column;
@@ -1668,7 +1671,7 @@ font-size: 40px;
     background-color: #fafafa;
 }
                 .testimonial-section {
-                    width: 95%;
+                    width: 94vw;
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
