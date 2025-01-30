@@ -1462,7 +1462,7 @@ display: flex;
 }
 .lokkho-course-main {
     width: 94%;
-    
+    margin: auto;
     background-color: #fafafa;
     
 }
