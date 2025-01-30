@@ -333,7 +333,10 @@ body {
         align-items: center;
     }
 }
-
+.navbar-main-desc,.for-responsvie-nav {
+    position: fixed;
+    z-index: 9999999999999999999;
+}
 @media only screen and (max-width: 1127px) {
     .navbar {
         display: none;
